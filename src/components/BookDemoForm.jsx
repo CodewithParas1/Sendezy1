@@ -7,16 +7,18 @@ const BookDemoForm = () => {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className=" text-yellow-400 min-h-screen flex flex-col items-center justify-center p-2">
+    <div className="text-yellow-400 min-h-screen flex flex-col items-center justify-center px-4">
       {/* Schedule a Demo Section */}
-      <div className="max-w-5xl w-full bg-blue-900 rounded-xl shadow-lg p-8 flex flex-wrap justify-between items-center">
+      <div className="w-full max-w-5xl bg-blue-900 rounded-xl shadow-lg p-6 sm:p-8 flex flex-wrap justify-between items-center">
         {/* Left Section */}
-        <div className="flex-1 pr-6">
-          <h1 className="text-4xl font-bold mb-4 font-lexend">Schedule a Demo</h1>
-          <p className="text-gray-300 mb-6">
+        <div className="flex-1 pr-0 sm:pr-6 mb-6 sm:mb-0">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold font-lexend">
+            Schedule a Demo
+          </h1>
+          <p className="text-gray-300 mt-4">
             Let’s get some basic info, and we will get you on the calendar!
           </p>
-          <p className="text-sm text-gray-400">
+          <p className="text-xs text-gray-400 mt-2">
             This data is protected by our Privacy Policy and Terms of Service.
           </p>
         </div>
@@ -24,36 +26,25 @@ const BookDemoForm = () => {
         {/* Form Section */}
         <div className="flex-1 bg-white rounded-lg p-6 text-black">
           <form className="space-y-4">
-            <input
-              type="text"
-              placeholder="Full Name*"
-              className="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            <input
-              type="tel"
-              placeholder="Phone Number*"
-              className="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            <input
-              type="email"
-              placeholder="Email Address*"
-              className="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            <input
-              type="text"
-              placeholder="Name of Company*"
-              className="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
+            {["Full Name*", "Phone Number*", "Email Address*", "Name of Company*"].map((placeholder) => (
+              <input
+                key={placeholder}
+                type="text"
+                placeholder={placeholder}
+                className="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            ))}
             <select
               className="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="" disabled selected>
                 How did you hear about us?
               </option>
-              <option value="social_media">Social Media</option>
-              <option value="friend">Friend</option>
-              <option value="advertisement">Advertisement</option>
-              <option value="other">Other</option>
+              {["Social Media", "Friend", "Advertisement", "Other"].map((option) => (
+                <option value={option.toLowerCase()} key={option}>
+                  {option}
+                </option>
+              ))}
             </select>
             <textarea
               placeholder="Anything else you want us to know?"

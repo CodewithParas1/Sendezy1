@@ -11,7 +11,7 @@ const Navbar = () => {
       {/* Logo Section */}
       <div className="flex items-center space-x-2">
         <Link to="/">
-          <img src="/assets/logo.png" alt="Logo" className="h-8" />
+          <img src="assets" alt="Logo" className="h-8" />
         </Link>
         <h1 className="text-xl font-bold text-blue-800 font-lexend">
           <Link to="/">Sendezy</Link>
@@ -22,22 +22,23 @@ const Navbar = () => {
       <div className="md:hidden">
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="text-blue-800 focus:outline-none"
+          className="relative w-8 h-8 focus:outline-none"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="2"
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M4 6h16M4 12h16m-7 6h7"
-            />
-          </svg>
+          <div
+            className={`absolute bg-blue-800 h-1 w-8 rounded transition-transform duration-300 ${
+              isMobileMenuOpen ? "rotate-45 translate-y-3.5" : "translate-y-0"
+            }`}
+          ></div>
+          <div
+            className={`absolute bg-blue-800 h-1 w-8 rounded transition-opacity duration-300 ${
+              isMobileMenuOpen ? "opacity-0" : "opacity-100"
+            }`}
+          ></div>
+          <div
+            className={`absolute bg-blue-800 h-1 w-8 rounded transition-transform duration-300 ${
+              isMobileMenuOpen ? "-rotate-45 -translate-y-3.5" : "translate-y-3"
+            }`}
+          ></div>
         </button>
       </div>
 
@@ -47,7 +48,7 @@ const Navbar = () => {
           isMobileMenuOpen ? "flex" : "hidden"
         } md:flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6 font-lexend absolute md:relative top-full md:top-0 left-0 w-full md:w-auto bg-white md:bg-transparent px-6 py-4 md:p-0 shadow-md md:shadow-none`}
       >
-        <div className="flex flex-col md:flex-row items-center md:space-x-6">
+        <div className="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6">
           {/* User Type Selector */}
           <div className="flex items-center border border-black rounded-full px-3 py-1 font-lexend">
             <Link
