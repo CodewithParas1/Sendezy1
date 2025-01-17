@@ -4,8 +4,8 @@ const Bookdemo1 = () => {
   return (
     <div className="bg-blue-900 min-h-screen flex flex-col items-center text-white px-4">
       {/* Header Section */}
-      <div className="w-full text-center py-10">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-yellow-400 font-lexend">
+      <div className="w-full text-center py-14">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-yellow-400 font-lexend py-5">
           Request A Demo
         </h1>
         <p className="font-lexend text-sm sm:text-base md:text-lg mt-2">

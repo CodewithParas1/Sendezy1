@@ -1,7 +1,7 @@
 import React from "react";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 
-const Footer = () => {
+const FooterCons = () => {
   return (
     <div className="bg-indigo-900 text-white">
       {/* Top Section */}
@@ -74,4 +74,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterCons;

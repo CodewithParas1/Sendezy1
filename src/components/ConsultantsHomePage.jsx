@@ -2,15 +2,23 @@ import React from "react";
 
 const ConsultantsHomePage = () => {
   return (
-    <div className="bg-gradient-to-b from-blue-950 to-blue-900 text-white py-16 px-4">
+    
+    <div className=" text-white py-24 px-4">
       {/* Main Heading */}
-      <div className="text-center mb-12">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-400 leading-snug">
+      <div className="text-center mb-14">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold font-lexend text-yellow-500 leading-snug">
           Help Your International Students Prepare for Their Journey
         </h1>
-        <p className="text-sm sm:text-lg mt-4">
+        <p className="text-sm sm:text-lg mt-5 text-white">
           Complete your transfer in just 24 hours, no forms required, using SENDEZY
         </p>
+
+        {/* Image Background */}
+       <div
+        className="absolute top-0 left-0 w-full h-full bg-cover bg-center -z-10"
+        style={{ backgroundImage: 'url("/assets/HomePage.jpg")' }}
+      ></div>
+
       </div>
 
       {/* Video Section */}

@@ -2,30 +2,42 @@ import React from "react";
 
 const Ongoing = () => {
   return (
-    <div className="bg-white relative w-full min-h-screen">
-      {/* Background */}
-<div className="absolute inset-0 bg-cover bg-center opacity-70" style={{ backgroundImage: 'url("https://www.shutterstock.com/image-illustration/soft-gray-studio-room-background-600nw-1493228318.jpg")' }}></div>
+    <section className="relative w-full min-h-[75vh] bg-gray-100 overflow-hidden">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: 'url("/assets/SwiftRem.jpg")',
+          backgroundSize: "cover",
+          backgroundAttachment: "fixed", // Optional: keeps the image fixed during scroll
+          backgroundRepeat: "no-repeat",
+        }}
+      ></div>
 
-      {/* Content */}
-      <div className="relative flex flex-col items-center justify-center min-h-screen px-6 text-center">
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black opacity-60"></div>
+
+      {/* Content Wrapper */}
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-[75vh] px-6 lg:px-24 text-center">
         {/* Title */}
-        <h1 className="text-3xl md:text-5xl font-bold text-blue-900 font-lexend">
-        Ongoing Commission:<span className="text-black"> Easy Rewards, No Matter Where You Are</span>
+        <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight">
+        Ongoing Commission:
+          <br />
+          <span className="text-yellow-400">Easy Rewards, No Matter Where You Are
+          </span>
         </h1>
 
         {/* Description */}
-        <p className="mt-4 text-lg md:text-xl ">
+        <p className="mt-6 text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl leading-relaxed">
         Imagine earning commissions without any extra work! With SENDEZY, you keep earning even after the student has traveled abroad. Our special system ensures you receive rewards throughout the student’s academic journey, not just at the time of payment—setting us apart from other forex providers.
         </p>
 
         {/* CTA Button */}
-        <button className="mt-10 px-10 py-3 bg-blue-900 text-white rounded-md font-semibold hover:bg-blue-700 duration-300">
+        <button className="mt-10 px-8 py-4 bg-yellow-400 text-blue-900 font-semibold text-lg rounded-full shadow-lg hover:bg-yellow-500 transition duration-300 ease-in-out">
           Contact Us
         </button>
-
-        
       </div>
-    </div>
+    </section>
   );
 };
 

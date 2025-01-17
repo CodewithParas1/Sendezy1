@@ -9,6 +9,7 @@ import Growincome from "./Growincome";
 import Ongoing from "./Ongoing";
 import NextGen from "./NextGen";
 import Benefits from "./Benefits";
+import FooterCons from "./FooterCons";
 
 const ConsultantsPage = () => {
   return (
@@ -24,6 +25,7 @@ const ConsultantsPage = () => {
       <Ongoing />
       <NextGen />
       <Benefits />
+      <FooterCons />
     </div>
   );
 };
