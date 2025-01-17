@@ -5,12 +5,12 @@ import React from "react";
 
 const AppDownload = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between bg-white py-14 px-4 md:px-8 lg:px-16">
+    <div className="flex flex-col md:flex-row items-center justify-between bg-white py-28 px-4 md:px-8 lg:px-16">
       {/* Left Section: Text Content */}
       <div className="flex-1 md:mr-8 text-center md:text-left">
         <h2 className="text-indigo-600 font-semibold text-lg"> </h2>
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-lexend font-semibold text-left text-blue-950 mt-1 mb-4 px-2 md:px-0">
-          Save Big on Fees: <span className="text-blue-700">Transparent and Affordable for Students</span>
+        <h1 className="text-4xl sm:text-3xl md:text-5xl font-lexend font-semibold text-left text-blue-900 mt-0 mb-6 px-2 md:px-0">
+          Save Big on Fees: 
         </h1>
         <p className="text-gray-800 mt-2 px-2 md:px-0 text-left">
           Enjoy a fully digital way to handle international payments—no paper

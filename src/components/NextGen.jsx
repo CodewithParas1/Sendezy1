@@ -10,7 +10,7 @@ const NextGen = () => {
       <div className="relative z-10 grid grid-cols-1 md:grid-cols-5 gap-10 items-center max-w-6xl w-full">
         {/* Text Section */}
         <div className="md:col-span-2 flex flex-col text-left md:pr-10">
-          <h1 className="text-3xl md:text-5xl font-bold text-white font-lexend">
+          <h1 className="text-3xl md:text-5xl font-lexend text-yellow-400 ">
             Next-Generation Digital Payments
           </h1>
           <p className="mt-4 text-lg md:text-xl text-white">

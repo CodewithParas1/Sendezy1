@@ -2,12 +2,12 @@ import React from "react";
 
 const EasyRem = () => {
   return (
-    <section className="bg-blue-900 text-white py-48 px-6 sm:px-12 lg:px-24">
+    <section className="bg-blue-900 text-white py-44 px-6 sm:px-12 lg:px-24">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left Text Section */}
         <div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-300 mb-6">
-            Easy Remittance: <span className="text-white">Skip the Forms and KYC Hassles</span>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-300 mb-8 ">
+            Easy Remittance: <span className="text-white">Skip the KYC Hassles</span>
           </h1>
           <p className="text-lg sm:text-xl leading-relaxed mb-8">
             No more paperwork! Sendezy simplifies remittance by removing the need for physical LRS/A2 forms, repeated transaction details, and KYC copies. Set up your account once and enjoy easy, hassle-free transfers.

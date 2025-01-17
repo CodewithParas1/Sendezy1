@@ -7,7 +7,7 @@ const HomePage = () => {
       data-scroll
       data-scroll-section
       data-scroll-speed="-0.8"
-      className="w-full min-h-screen relative overflow-hidden"
+      className="w-full min-h-screen relative overflow-hidden pt-20" // Added pt-20
     >
        {/* Image Background */}
        <div
@@ -32,7 +32,7 @@ const HomePage = () => {
             <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transform hover:scale-105 duration-200 text-sm sm:text-base">
               Open a Free Account
             </button>
-    <button className="border border-blue-600 text-blue-600 hover:bg-blue-100 font-semibold px-6 py-3 rounded-lg shadow-md transform hover:scale-105 duration-200 text-sm sm:text-base">
+    <button className="border border-white text-white hover:bg-blue-600 font-semibold px-6 py-3 rounded-lg shadow-md transform hover:scale-105 duration-200 text-sm sm:text-base">
       See How it Works
     </button>
   </div>

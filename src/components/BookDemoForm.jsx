@@ -7,9 +7,9 @@ const BookDemoForm = () => {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className=" bg-blue-900 text-yellow-400 min-h-screen flex flex-col items-center justify-center px-4">
+    <div className=" bg-blue-950 text-yellow-400 min-h-screen flex flex-col items-center justify-center px-4 ">
       {/* Schedule a Demo Section */}
-      <div className="w-full max-w-5xl bg-blue-950 rounded-xl shadow-lg p-6 sm:p-8 flex flex-wrap justify-between items-center">
+      <div className="w-full max-w-5xl bg-blue-900 rounded-xl shadow-lg p-6 sm:p-8 flex flex-wrap justify-between items-center mt-2">
         {/* Left Section */}
         <div className="flex-1 pr-0 sm:pr-6 mb-6 sm:mb-0">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold font-lexend">

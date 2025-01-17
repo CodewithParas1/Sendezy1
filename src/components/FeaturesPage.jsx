@@ -25,12 +25,12 @@ const FeaturesPage = () => {
       </div>
 
       {/* Text Section */}
-      <div className="w-full max-w-4xl text-center mt-20">
+      <div className="w-full max-w-4xl text-center mt-16">
         <h3 className="text-blue-700 font-lexend text-2xl ">Send money in a heartbeat</h3>
-        <h1 className="text-blue-900 font-bold text-4xl md:text-6xl mt-6 leading-tight">
+        <h1 className="text-blue-900 font-bold text-4xl md:text-6xl mt-10 leading-tight">
           The World At Your Fingertips
         </h1>
-        <p className="text-gray-600 text-lg mt-4 font-lexend">
+        <p className="text-blue-600 text-lg mt-12 font-lexend">
           Sign up to start saving on international money transfers and currency exchange.
         </p>
       </div>

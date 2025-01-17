@@ -67,8 +67,8 @@ const Navbar = () => {
             to="/students"
             className={`cursor-pointer font-semibold px-2 ${
               location.pathname === "/students"
-                ? "text-yellow-400 hover:text-yellow-600"
-                : "text-white hover:text-yellow-400"
+                ? "text-green-400 hover:text-green-600"
+                : "text-white hover:text-green-400"
             }`}
           >
             Students
@@ -78,8 +78,8 @@ const Navbar = () => {
             to="/consultants"
             className={`cursor-pointer font-semibold px-2 ${
               location.pathname === "/consultants"
-                ? "text-yellow-400 hover:text-yellow-600"
-                : "text-white hover:text-yellow-400"
+                ? "text-green-400 hover:text-green-600"
+                : "text-white hover:text-green-400"
             }`}
           >
             Consultants

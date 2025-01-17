@@ -25,8 +25,8 @@ const Working = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center bg-white py-32 px-4 md:px-8 lg:px-16">
-      <h2 className="text-indigo-600 font-semibold text-lg">How it works?</h2>
+    <div className="flex flex-col items-center bg-white py-20 px-4 md:px-8 lg:px-16">
+      <h2 className="text-indigo-600 font-semibold text-xl">How it works?</h2>
       <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mt-2">
         Just a few steps to start
       </h1>

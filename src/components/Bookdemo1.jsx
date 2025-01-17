@@ -2,9 +2,9 @@ import React from "react";
 
 const Bookdemo1 = () => {
   return (
-    <div className="bg-blue-900 min-h-screen flex flex-col items-center text-white px-4">
+    <div className="bg-blue-950 min-h-[80vh] flex flex-col items-center text-white px-4">
       {/* Header Section */}
-      <div className="w-full text-center py-14">
+      <div className="w-full text-center py-10">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-yellow-400 font-lexend py-5">
           Request A Demo
         </h1>
@@ -26,7 +26,7 @@ const Bookdemo1 = () => {
       </div>
 
       {/* Call-to-Action Button */}
-      <button className="mt-6 px-6 py-3 bg-yellow-400 text-blue-900 font-bold text-sm sm:text-base md:text-lg rounded-full shadow-lg hover:bg-yellow-300 hover:shadow-2xl transition-all duration-300">
+      <button className="mt-8 px-6 py-3 bg-yellow-400 text-blue-950 font-bold text-sm sm:text-base md:text-lg rounded-full shadow-lg hover:bg-yellow-300 hover:shadow-2xl transition-all duration-300">
         Book a Demo
       </button>
     </div>

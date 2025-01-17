@@ -2,7 +2,7 @@ import React from "react";
 
 const Ongoing = () => {
   return (
-    <section className="relative w-full min-h-[75vh] bg-gray-100 overflow-hidden">
+    <section className="relative w-full min-h-[85vh] bg-gray-100 overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -20,7 +20,7 @@ const Ongoing = () => {
       {/* Content Wrapper */}
       <div className="relative z-10 flex flex-col items-center justify-center min-h-[75vh] px-6 lg:px-24 text-center">
         {/* Title */}
-        <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight">
+        <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mt-10">
         Ongoing Commission:
           <br />
           <span className="text-yellow-400">Easy Rewards, No Matter Where You Are
@@ -33,7 +33,7 @@ const Ongoing = () => {
         </p>
 
         {/* CTA Button */}
-        <button className="mt-10 px-8 py-4 bg-yellow-400 text-blue-900 font-semibold text-lg rounded-full shadow-lg hover:bg-yellow-500 transition duration-300 ease-in-out">
+        <button className="mt-10 px-8 py-4 bg-blue-600 text-white font-semibold text-lg rounded-full shadow-lg hover:bg-blue-900 transition duration-300 ease-in-out">
           Contact Us
         </button>
       </div>

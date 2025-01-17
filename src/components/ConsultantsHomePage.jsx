@@ -2,8 +2,13 @@ import React from "react";
 
 const ConsultantsHomePage = () => {
   return (
-    
-    <div className=" text-white py-24 px-4">
+    <div className="relative text-white py-48 px-4">
+      {/* Image Background */}
+      <div
+        className="absolute top-0 left-0 w-full h-full bg-cover bg-center -z-10"
+        style={{ backgroundImage: 'url("/assets/ConsHome.jpg")' }}
+      ></div>
+
       {/* Main Heading */}
       <div className="text-center mb-14">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold font-lexend text-yellow-500 leading-snug">
@@ -12,13 +17,6 @@ const ConsultantsHomePage = () => {
         <p className="text-sm sm:text-lg mt-5 text-white">
           Complete your transfer in just 24 hours, no forms required, using SENDEZY
         </p>
-
-        {/* Image Background */}
-       <div
-        className="absolute top-0 left-0 w-full h-full bg-cover bg-center -z-10"
-        style={{ backgroundImage: 'url("/assets/HomePage.jpg")' }}
-      ></div>
-
       </div>
 
       {/* Video Section */}

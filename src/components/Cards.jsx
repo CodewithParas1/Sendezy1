@@ -6,7 +6,7 @@ const Cards = () => {
       {/* Content Container */}
       <div className="max-w-6xl flex flex-col md:flex-row items-center md:items-start gap-8">
         {/* Image Section with Light Gray Background */}
-        <div className="w-full md:flex-1 bg-gray-300 p-4 rounded-lg">
+        <div className="w-full md:flex-1 bg-white p-0 rounded-lg">
           <img
             src="https://media.istockphoto.com/id/1316049982/vector/core-banking-it-system-abstract-concept-vector-illustration.jpg?s=612x612&w=0&k=20&c=eVjsfYkt4mvU7JSH2U6FJhM0aHbraN5arZ-aOrAvbqY="
             alt="Core Banking IT System"
@@ -15,10 +15,10 @@ const Cards = () => {
         </div>
 
         {/* Cards Section */}
-        <div className="w-full md:flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="w-full md:flex-1 grid grid-cols-1 md:grid-cols-2 gap-3 ">
           <div className="bg-white shadow-md rounded-lg p-6 text-center">
             <img
-              src="https://via.placeholder.com/64"
+              src="assets/icon1.jpg"
               alt="Peace of Mind"
               className="mx-auto mb-4"
             />
@@ -27,13 +27,12 @@ const Cards = () => {
             </h2>
             <p className="text-gray-600">
               Skip the hassle of education loan applications. We gather your
-              basic details and match you with the best provider, saving you
-              time and money.
+              basic details and match you with the best provider.
             </p>
           </div>
           <div className="bg-white shadow-md rounded-lg p-6 text-center">
             <img
-              src="https://via.placeholder.com/64"
+              src="assets/icon2.jpg"
               alt="Business-Ready"
               className="mx-auto mb-4"
             />
@@ -45,9 +44,9 @@ const Cards = () => {
               get by—flourish on your journey!
             </p>
           </div>
-          <div className="bg-white shadow-md rounded-lg p-6 text-center">
+          <div className="bg-white shadow-md rounded-lg p-8 text-center">
             <img
-              src="https://via.placeholder.com/64"
+              src="assets/icon3.jpg"
               alt="100% Transparent"
               className="mx-auto mb-4"
             />
@@ -56,12 +55,12 @@ const Cards = () => {
             </h2>
             <p className="text-gray-600">
               We guarantee that funds will reach the beneficiary account within
-              48 hours, though most transfers are completed in just 24 hours.
+              48 hours.
             </p>
           </div>
           <div className="bg-white shadow-md rounded-lg p-6 text-center">
             <img
-              src="https://via.placeholder.com/64"
+              src="assets/icon4.jpg"
               alt="International Network"
               className="mx-auto mb-4"
             />
@@ -69,8 +68,7 @@ const Cards = () => {
               International Network
             </h2>
             <p className="text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel
-              venenatis, eu sit massa. Volutpat massa rhoncus odio.
+              Connecting a global network for seamless and swift remittances with Sendezy.
             </p>
           </div>
         </div>
