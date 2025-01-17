@@ -7,7 +7,7 @@ const HomePage = () => {
       data-scroll
       data-scroll-section
       data-scroll-speed="-0.8"
-      className="w-full min-h-screen relative overflow-hidden"
+      className="w-full min-h-screen relative overflow-hidden pt-20" // Added pt-20
     >
        {/* Image Background */}
        <div
