@@ -1,22 +1,29 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const NextGen = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="relative w-full min-h-screen flex items-center justify-center px-6">
       {/* Background with Solid Blue Color */}
-      <div className="absolute inset-0 bg-blue-950 "></div>
+      <div className="absolute inset-0 bg-blue-950"></div>
 
       {/* Content */}
       <div className="relative z-10 grid grid-cols-1 md:grid-cols-5 gap-10 items-center max-w-6xl w-full">
         {/* Text Section */}
         <div className="md:col-span-2 flex flex-col text-left md:pr-10">
-          <h1 className="text-3xl md:text-5xl font-lexend text-yellow-400 ">
+          <h1 className="text-3xl md:text-5xl font-lexend text-yellow-400">
             Next-Generation Digital Payments
           </h1>
           <p className="mt-4 text-lg md:text-xl text-white">
-            Keep track of every commission in a single platform, making financial management easy.
+            Keep track of every commission in a single platform, making
+            financial management easy.
           </p>
-          <button className="mt-10 px-10 py-3 bg-blue-700 text-white rounded-md font-semibold hover:bg-blue-600 duration-300">
+          <button
+            className="mt-10 px-10 py-3 bg-blue-700 text-white rounded-md font-semibold hover:bg-blue-600 duration-300"
+            onClick={() => navigate("/contact")}
+          >
             Contact Us
           </button>
         </div>

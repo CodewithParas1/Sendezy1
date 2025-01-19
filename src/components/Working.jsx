@@ -4,43 +4,48 @@ const Working = () => {
   const steps = [
     {
       title: "Register for free",
-      description: "Simply sign up online for free and verify your identity",
+      description: "Sign up online for free and verify your identity effortlessly.",
       icon: "📝",
     },
     {
       title: "Set up your transfer",
-      description: "Add a recipient's details and choose which currency...",
+      description: "Add the recipient's details and select the currency for your transfer.",
       icon: "⚙️",
     },
     {
       title: "Make your payment",
-      description: "Send us your funds with a bank transfer and we’ll notify...",
+      description: "Send us your funds securely, and we’ll keep you updated in real time.",
       icon: "💳",
     },
     {
       title: "You’re all done!",
-      description: "We inform you when the money has been sent and can also...",
+      description: "We’ll notify you when the money has been successfully sent.",
       icon: "✅",
     },
   ];
 
   return (
-    <div className="flex flex-col items-center bg-white py-20 px-4 md:px-8 lg:px-16">
-      <h2 className="text-indigo-600 font-semibold text-xl">How it works?</h2>
-      <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mt-2">
-        Just a few steps to start
-      </h1>
-      <p className="text-gray-600 mt-4 text-center">
-        It's easier than you think. Follow 3 simple easy steps
-      </p>
-      <div className="flex flex-col md:flex-row justify-center items-start mt-8 space-y-8 md:space-y-0 md:space-x-8">
+    <div className="bg-gradient-to-b from-indigo-50 to-white py-20 px-4 md:px-8 lg:px-16">
+      <div className="text-center">
+        <h2 className="text-indigo-600 font-semibold text-xl uppercase tracking-wide">
+          How it works?
+        </h2>
+        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mt-3">
+          Just a few steps to get started
+        </h1>
+        <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+          Follow these simple steps to enjoy seamless transactions with ease.
+        </p>
+      </div>
+
+      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {steps.map((step, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-center bg-gray-50 p-6 rounded-lg shadow-lg max-w-xs"
+            className="flex flex-col items-center text-center bg-white border border-gray-200 rounded-xl shadow-xl p-8 hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
           >
             <div className="text-5xl text-indigo-500">{step.icon}</div>
-            <h3 className="text-lg font-semibold text-gray-800 mt-4">
+            <h3 className="text-lg font-bold text-gray-800 mt-4">
               {step.title}
             </h3>
             <p className="text-gray-600 mt-2">{step.description}</p>

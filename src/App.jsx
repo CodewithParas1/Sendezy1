@@ -8,8 +8,18 @@ import Working from "./components/Working";
 import AppDownload from "./components/AppDownload";
 import Marquee from "./components/Marquee";
 import Footer from "./components/Footer";
-import ConsultantsPage from "./components/ConsultantsPage";
-import StudentsPage from "./components/StudentsPage"; // New page
+import StudentsPage from "./components/StudentsPage";
+import ConsultantsHomePage from "./components/ConsultantsHomePage";
+import Bookdemo1 from "./components/Bookdemo1";
+import BookDemoForm from "./components/BookDemoForm";
+import Speedy from "./components/Speedy";
+import Growincome from "./components/Growincome";
+import Ongoing from "./components/Ongoing";
+import NextGen from "./components/NextGen";
+import Benefits from "./components/Benefits";
+import FooterCons from "./components/FooterCons";
+import Contact from "./components/Contact";
+import AboutUs from "./components/AboutUs"; // Importing AboutUs component
 
 const App = () => {
   return (
@@ -18,6 +28,7 @@ const App = () => {
         <Navbar />
         <main className="mt-4">
           <Routes>
+            {/* Main Home Page Routes */}
             <Route
               path="/"
               element={
@@ -32,8 +43,33 @@ const App = () => {
                 </>
               }
             />
+
+            {/* Students Page Route */}
             <Route path="/students" element={<StudentsPage />} />
-            <Route path="/consultants" element={<ConsultantsPage />} />
+
+            {/* Consultants Page Routes */}
+            <Route
+              path="/consultants"
+              element={
+                <>
+                  <ConsultantsHomePage />
+                  <Bookdemo1 />
+                  <BookDemoForm />
+                  <Speedy />
+                  <Growincome />
+                  <Ongoing />
+                  <NextGen />
+                  <Benefits />
+                  <FooterCons />
+                </>
+              }
+            />
+
+            {/* About Us Page Route */}
+            <Route path="/about-us" element={<AboutUs />} />
+
+            {/* Contact Page Route */}
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
       </div>

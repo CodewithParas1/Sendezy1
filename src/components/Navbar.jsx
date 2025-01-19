@@ -99,7 +99,11 @@ const Navbar = () => {
         </Link>
         <Link
           to="/about-us"
-          className="font-medium text-white hover:text-yellow-400 hover:scale-105 duration-200"
+          className={`font-medium ${
+            location.pathname === "/about-us"
+              ? "text-yellow-400 hover:scale-105"
+              : "text-white hover:text-yellow-400 hover:scale-105"
+          } duration-200`}
         >
           About Us
         </Link>
