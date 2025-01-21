@@ -10,8 +10,8 @@ const AboutUs = () => {
           <span className="font-semibold">
             Welcome to Sendezy International Money Transfer
           </span>{" "}
-          <span className="text-xl text-yellow-400">
-            your trusted partner for fast, secure, and affordable global
+          <span className="text-xl text-yellow-400 font-lexend">
+            Your trusted partner for fast, secure, and affordable global
             remittance solutions.
           </span>
         </h1>
@@ -37,16 +37,31 @@ const AboutUs = () => {
 
       {/* Why Choose Sendezy Section */}
       <div className="bg-blue-950 text-white px-6 py-16 md:px-32 md:py-20">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          Why Choose Sendezy?
-        </h2>
-        <ul className="list-disc list-inside text-lg md:text-xl leading-relaxed">
-          <li>Backed by a trusted and licensed fintech company.</li>
-          <li>Access to an extensive network of agents and payout locations.</li>
-          <li>Customer-first approach with 24/7 support.</li>
-          <li>Continuous innovation to meet evolving financial needs.</li>
-        </ul>
-      </div>
+  <div className="flex flex-col md:flex-row items-start md:space-x-12">
+    {/* Text Content */}
+    <div className="md:w-1/2">
+      <h2 className="text-3xl md:text-4xl font-lexend font-bold mb-8">
+        Why Choose Sendezy?
+      </h2>
+      <ul className="list-disc list-inside space-y-4 text-lg md:text-xl leading-relaxed">
+        <li>Backed by a trusted and licensed fintech company.</li>
+        <li>Access to an extensive network of payout locations.</li>
+        <li>Customer-first approach with 24/7 support.</li>
+        <li>Continuous innovation to meet evolving financial needs.</li>
+      </ul>
+    </div>
+
+    {/* Image */}
+    <div className="md:w-auto mt-8 md:mt-0 md:ml-32 pl-4 pr-4">
+      <img
+        src="/assets/logo1.jpg"
+        alt="Why Choose Sendezy"
+        className="rounded-lg shadow-lg"
+      />
+    </div>
+  </div>
+</div>
+      
       
 
       {/* Leadership Section */}
