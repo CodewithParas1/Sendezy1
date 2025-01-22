@@ -6,14 +6,16 @@ const AboutUs = () => {
     <div className="bg-blue-950 text-white font-lexend">
       {/* Hero Section */}
       <div className="text-center py-16 px-6 md:py-40 md:px-32">
-        <h1 className="text-4xl md:text-5xl font-lexend leading-snug">
+        <h1 className="text-5xl md:text-7xl font-lexend leading-snug">
           <span className="font-semibold">
-            Welcome to Sendezy International Money Transfer
+          Sendezy International: 
+
+    <br></br>
+
           </span>{" "}
-          <span className="text-xl text-yellow-400 font-lexend">
-            Your trusted partner for fast, secure, and affordable global
-            remittance solutions.
-          </span>
+          <span className="mt-6 text-center text-6xl md-text-5xl font-semibold text-yellow-400 font-lexend ">
+            Simplifying Global Money Transfers
+          </span> 
         </h1>
       </div>
 
@@ -21,17 +23,28 @@ const AboutUs = () => {
       <div className="bg-white text-blue-950 px-6 py-16 md:px-32 md:py-20">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Story</h2>
         <p className="text-lg md:text-xl leading-relaxed">
-          Sendezy International is powered by RBP Finivis Private Limited, a
-          Reserve Bank of India (RBI) licensed fintech company established in
-          2021. RBP Finivis has been at the forefront of financial innovation.
-          With a robust network of over 25,000 agents across India, RBP Finivis
-          ensures seamless financial services, enabling Sendezy to deliver
-          exceptional value and reliability to our customers.
+        Sendezy International is an aggregator platform dedicated to providing simple,
+         secure, and cost-effective international money transfer services. 
+         Born out of a vision to bridge financial gaps across borders, 
+         Sendezy empowers individuals and businesses by offering seamless and 
+         reliable solutions for global remittances.
+
         </p>
         <p className="text-lg md:text-xl leading-relaxed mt-4">
-          Our mission is to provide simple, secure, and cost-effective
-          international money transfer services, fostering financial inclusion
-          and building bridges across borders.
+        With a focus on partnering with RBP Finivis Private Limited, 
+        a Reserve Bank of India (RBI) licensed fintech company, 
+        Sendezy facilitates international money transfers through a 
+        robust network of trusted partners. This ensures that our 
+        customers receive exceptional service with the highest 
+        standards of security and reliability.
+
+        </p>
+        <p className="text-lg md:text-xl leading-relaxed mt-4">
+        Sendezy is committed to fostering financial inclusion,
+        making global transactions accessible and affordable 
+        for everyone. By prioritizing user experience and innovation,
+        we are redefining how people connect financially, one transaction 
+        at a time.
         </p>
       </div>
 
@@ -51,72 +64,21 @@ const AboutUs = () => {
       </ul>
     </div>
 
-    {/* Image */}
-    <div className="md:w-auto mt-8 md:mt-0 md:ml-32 pl-4 pr-4">
-      <img
-        src="/assets/logo1.jpg"
-        alt="Why Choose Sendezy"
-        className="rounded-lg shadow-lg"
-      />
-    </div>
+   {/* Image */}
+<div className="w-full sm:w-80 mt-8 sm:mt-0 sm:ml-24 px-4 transform sm:translate-x-40">
+  <img
+    src="/assets/logofinal.jpg"
+    alt="Why Choose Sendezy"
+    className="rounded-lg shadow-lg mx-auto"
+  />
+</div>
+
+
   </div>
 </div>
       
       
 
-      {/* Leadership Section */}
-<div className="bg-white text-blue-950 py-16">
-  <div className="max-w-6xl mx-auto px-6">
-    <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-      Leadership
-    </h2>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-      {/* Card 1 */}
-      <div className="text-center">
-        <img
-          src="https://www.cxooutlook.com/wp-content/uploads/2021/07/Sam-Gupta.jpg"
-          alt="Sam Gupta"
-          className="w-40 h-40 mx-auto rounded-full object-cover mb-4"
-        />
-        <h3 className="text-lg font-semibold">Sam Gupta</h3>
-        <p className="text-gray-600">Founder and CEO</p>
-      </div>
-
-      {/* Card 2 */}
-      <div className="text-center">
-        <img
-          src="https://media.licdn.com/dms/image/C4D03AQFP638hpvkvGg/profile-displayphoto-shrink_200_200/0/1516816665907?e=2147483647&v=beta&t=rLv56c7sbNS7fR8ALjijhnK_pzLUC5lA3-EnCwkBOC4"
-          alt="Pankaj Gupta"
-          className="w-40 h-40 mx-auto rounded-full object-cover mb-4"
-        />
-        <h3 className="text-lg font-semibold">Pankaj Gupta</h3>
-        <p className="text-gray-600">CSO</p>
-      </div>
-
-      {/* Card 3
-      <div className="text-center">
-        <img
-          src="path-to-ujwal-image.jpg"
-          alt="Ujwal Tamminedi"
-          className="w-40 h-40 mx-auto rounded-full object-cover mb-4"
-        />
-        <h3 className="text-lg font-semibold">Ujwal Tamminedi</h3>
-        <p className="text-gray-600">Co-Founder and CTO</p>
-      </div>
-
-      {/* Card 4 */}
-      {/* <div className="text-center">
-        <img
-          src="path-to-other-leader-image.jpg"
-          alt="Other Leader"
-          className="w-40 h-40 mx-auto rounded-full object-cover mb-4"
-        />
-        <h3 className="text-lg font-semibold">Other Leader Name</h3>
-        <p className="text-gray-600">Role</p>
-      </div> */} 
-    </div>
-  </div>
-</div>
 
       {/* Footer Section */}
       <Footer />

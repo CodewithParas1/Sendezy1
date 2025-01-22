@@ -12,9 +12,9 @@ const Navbar = () => {
       <div className="flex items-center">
         <Link to="/">
           <img
-            src="/assets/logo1.jpg"
+            src="/assets/logofinal.jpg"
             alt="Logo"
-            className="h-16 md:h-20 object-contain max-w-full"
+            className="h-16 md:h-24 object-contain max-w-full"
             style={{
               objectFit: "contain",
             }}
@@ -49,23 +49,14 @@ const Navbar = () => {
       <div
         className={`${
           isMobileMenuOpen ? "flex" : "hidden"
-        } md:flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6 font-lexend absolute md:relative top-full md:top-0 left-0 w-full md:w-auto bg-blue-950 text-white px-6 py-4 md:p-0 shadow-md md:shadow-none`}
+        } md:flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-14 font-lexend absolute md:relative top-full md:top-0 left-0 w-full md:w-auto bg-blue-950 text-white px-6 py-4 md:p-0 shadow-md md:shadow-none`}
       >
         {/* Links */}
-        <Link
-          to="/"
-          className={`font-medium ${
-            location.pathname === "/"
-              ? "text-yellow-400 hover:scale-105"
-              : "text-white hover:text-yellow-400 hover:scale-105"
-          } duration-200`}
-        >
-          Home
-        </Link>
-        <div className="flex items-center border border-white rounded-full px-3 py-1">
+        
+        <div className="flex items-center border border-white rounded-full px-3 py-1.5">
           <Link
             to="/students"
-            className={`cursor-pointer font-semibold px-2 ${
+            className={`cursor-pointer font-semibold px-4 ${
               location.pathname === "/students"
                 ? "text-green-400 hover:text-green-600"
                 : "text-white hover:text-green-400"
@@ -73,10 +64,11 @@ const Navbar = () => {
           >
             Students
           </Link>
+          
           <span className="mx-2 text-gray-300">|</span>
           <Link
             to="/consultants"
-            className={`cursor-pointer font-semibold px-2 ${
+            className={`cursor-pointer font-semibold px-4 ${
               location.pathname === "/consultants"
                 ? "text-green-400 hover:text-green-600"
                 : "text-white hover:text-green-400"
@@ -85,21 +77,27 @@ const Navbar = () => {
             Consultants
           </Link>
         </div>
+        
         <Link
-          to="/forex"
-          className="font-medium text-white hover:text-yellow-400 hover:scale-105 duration-200"
+          to="/"
+          className={`font-medium  ${
+            location.pathname === "/"
+              ? "text-yellow-400 hover:scale-105 "
+              : "text-white hover:text-yellow-400 hover:scale-105 "
+          } duration-200`}
         >
-          Forex
+          Home
         </Link>
+
         <Link
           to="/education-loan"
-          className="font-medium text-white hover:text-yellow-400 hover:scale-105 duration-200"
+          className="pl-0 pr-0 font-medium text-white hover:text-yellow-400 hover:scale-105 duration-200"
         >
           Education Loan
         </Link>
         <Link
           to="/about-us"
-          className={`font-medium ${
+          className={`font-medium pl=0 pr-2 ${
             location.pathname === "/about-us"
               ? "text-yellow-400 hover:scale-105"
               : "text-white hover:text-yellow-400 hover:scale-105"
@@ -107,15 +105,10 @@ const Navbar = () => {
         >
           About Us
         </Link>
-        <Link
-          to="/blogs"
-          className="font-medium text-white hover:text-yellow-400 hover:scale-105 duration-200"
-        >
-          Blogs
-        </Link>
+        
 
         {/* Login Button */}
-        <button className="bg-yellow-400 text-black font-semibold px-4 py-2 rounded-md mt-4 md:mt-0">
+        <button className="bg-yellow-400 text-black font-lexend font-semibold px-5 py-2.5 rounded-md mt-4 md:mt-0 pr-6 ">
           Login
         </button>
       </div>

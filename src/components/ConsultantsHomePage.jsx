@@ -11,7 +11,7 @@ const ConsultantsHomePage = () => {
 
       {/* Main Heading */}
       <div className="text-center mb-14">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold font-lexend text-yellow-500 leading-snug">
+        <h1 className="text-3xl sm:text-3xl md:text-4xl font-bold font-lexend text-yellow-500 leading-snug">
           Help Your International Students Prepare for Their Journey
         </h1>
         <p className="text-sm sm:text-lg mt-5 text-white">

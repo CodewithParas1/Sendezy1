@@ -20,6 +20,7 @@ import Benefits from "./components/Benefits";
 import FooterCons from "./components/FooterCons";
 import Contact from "./components/Contact";
 import AboutUs from "./components/AboutUs"; // Importing AboutUs component
+import EasyRem from "./components/EasyRem";
 
 const App = () => {
   return (
@@ -37,6 +38,7 @@ const App = () => {
                   <FeaturesPage />
                   <Cards />
                   <Working />
+                  <EasyRem />
                   <AppDownload />
                   <Marquee />
                   <Footer />
