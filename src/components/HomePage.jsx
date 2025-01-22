@@ -60,8 +60,8 @@ const HomePage = () => {
     </div>
   </div>
   <div className="flex flex-col items-center text-center">
-    <span className="text-sm text-gray-600">Recipient's Amount</span>
-    <span className="text-lg text-gray-600 font-semibold font-lexend mt-2 border-gray-500 rounded-lg p-1 pr-6 pl-6 shadow-md">₹ 762,960</span>
+    <span className="text-sm text-gray-600">Receiver's Amount</span>
+    <span className="text-lg text-gray-600 font-semibold font-lexend mt-2 border-gray-500 rounded-lg p-1 pr-6 pl-6 shadow-md">₹ 566,049.74</span>
   </div>
 </div>
 
@@ -115,7 +115,7 @@ const HomePage = () => {
                   <span className="text-xl font-bold font-lexend items-center mt-0">Total Amount</span> 
                 </p>
                 <p className="flex justify-center text-4xl font-semibold ">
-                   <span className="font-bold font-lexend items-center">₹ 766,587.86</span>
+                   <span className="font-bold font-lexend items-center">₹ 573,305.46</span>
                 </p>
               </div>
               <p className="flex text-xs text-gray-400 mt-6 justify-center">
