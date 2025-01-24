@@ -2,31 +2,31 @@ import React from "react";
 
 const EasyRem = () => {
   return (
-    <section className="bg-blue-900 text-white py-44 px-6 sm:px-12 lg:px-24">
-      <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        {/* Left Text Section */}
-        <div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-300 mb-8 ">
-            Easy Remittance: <span className="text-white">Skip the KYC Hassles</span>
-          </h1>
-          <p className="text-lg sm:text-xl leading-relaxed mb-8">
-            No more paperwork! Sendezy simplifies remittance by removing the need for physical LRS/A2 forms, repeated transaction details, and KYC copies. Set up your account once and enjoy easy, hassle-free transfers.
-          </p>
-          <button className="px-6 py-3 bg-yellow-400 text-blue-900 font-medium rounded-md shadow-lg hover:bg-yellow-500 transition duration-300">
-            Send Money
-          </button>
-        </div>
-
-        {/* Right Image Section */}
-        <div className="flex justify-center">
-      <img
-        src="https://cms-attachments.storage.googleapis.com/blog/uploads/2023/08/6-Best-International-Money-Transfer-Services-in-India.png"
-        alt="Easy Remittance Illustration"
-        className="w-full max-w-lg lg:max-w-xl rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
-      />
-    </div>
+    <div className="flex flex-col md:flex-row items-center justify-between bg-blue-900 py-28 px-6 md:px-12 lg:px-20">
+      {/* Left Section: Text Content */}
+      <div className="flex-1 md:mr-12 text-center md:text-left">
+        
+        <h1 className="text-4xl md:text-5xl font-lexend font-semibold text-white leading-tight mb-6">
+        Easy Remittance: Skip the KYC Hassles
+        </h1>
+        <p className="text-white text-lg leading-relaxed mb-8 pt-5 text-wrap font-lexend">
+        No more paperwork! Sendezy simplifies remittance by removing the need for physical LRS/A2 forms, repeated transaction details, and KYC copies. Set up your account once and enjoy easy, hassle-free transfers.
+        </p>
+        <button className="px-8 py-4 bg-yellow-400 text-blue-900 font-lexend rounded-md shadow-lg hover:bg-yellow-500 transition duration-300">
+        Send Money
+        </button>
       </div>
-    </section>
+
+      {/* Right Section: Image */}
+      <div className="flex-1 flex justify-center mt-8 md:mt-0">
+        <img
+          src="/assets/EasyRem.png"
+          alt="Digital Platform Illustration"
+          className="rounded-lg shadow-lg w-full max-w-md md:max-w-lg object-cover"
+        />
+      </div>
+      
+    </div>
   );
 };
 

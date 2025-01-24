@@ -53,7 +53,7 @@ const HomePage = () => {
     {/* Image for the country flag */}
     <div className="w-25 h-10 ">
       <img
-        src="/assets/Indiaflag.webp" // Update this with the actual path to the flag image
+        src="/assets/Indiaflag.webp" 
         alt="Country Flag"
         className="object-cover w-full h-full rounded-md"
       />
@@ -75,7 +75,7 @@ const HomePage = () => {
     {/* Image for the country flag */}
     <div className="w-25 h-10 ">
       <img
-        src="/assets/Canada.webp" // Update this with the actual path to the flag image
+        src="/assets/Canada.webp" 
         alt="Country Flag"
         className="object-cover w-full h-full rounded-md"
       />

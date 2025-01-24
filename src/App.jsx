@@ -5,7 +5,7 @@ import HomePage from "./components/HomePage";
 import FeaturesPage from "./components/FeaturesPage";
 import Cards from "./components/Cards";
 import Working from "./components/Working";
-import AppDownload from "./components/AppDownload";
+import AppDownload from "./components/SaveFees";
 import Marquee from "./components/Marquee";
 import Footer from "./components/Footer";
 import StudentsPage from "./components/StudentsPage";
@@ -19,8 +19,9 @@ import NextGen from "./components/NextGen";
 import Benefits from "./components/Benefits";
 import FooterCons from "./components/FooterCons";
 import Contact from "./components/Contact";
-import AboutUs from "./components/AboutUs"; // Importing AboutUs component
+import AboutUs from "./components/AboutUs"; 
 import EasyRem from "./components/EasyRem";
+import EducationLoanPage from "./components/EducationLoanPage";
 
 const App = () => {
   return (
@@ -72,6 +73,10 @@ const App = () => {
 
             {/* Contact Page Route */}
             <Route path="/contact" element={<Contact />} />
+
+             {/* Education Loan Page Route */}
+            <Route path="/education-loan" element={<EducationLoanPage />} />
+
           </Routes>
         </main>
       </div>
